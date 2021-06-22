@@ -6,6 +6,8 @@ type cases = [
   Expect<Alike<MyReadonly2<Todo2, 'title' | 'description'>, Expected>>,
 ]
 
+type  a = MyReadonly2<Todo1, 'title' | 'description'>
+
 interface Todo1 {
   title: string
   description?: string
